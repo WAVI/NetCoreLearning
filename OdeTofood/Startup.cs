@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -19,6 +20,10 @@ namespace OdeTofood
         {
             //services.AddScoped<IGreeter, Greeter>();
             services.AddSingleton<IGreeter , Greeter>();
+            
+
+            //for MVC
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -31,11 +36,13 @@ namespace OdeTofood
                                )
         {
 
-            if ( env.IsDevelopment() )
-            {
-                //this is for when we have an error, it displays a developer friendly window if we get errors
-                app.UseDeveloperExceptionPage();
-            }
+            #region BEFORE MVC FULL SAVE
+
+            //if ( env.IsDevelopment() )
+            //{
+            //    //this is for when we have an error, it displays a developer friendly window if we get errors
+            //    app.UseDeveloperExceptionPage();
+            //}
 
             //ORDER OF MIDDLEWARE IS IMPORTANT
 
@@ -67,22 +74,56 @@ namespace OdeTofood
 
             #endregion mymiddleware
 
+            #region middleware for using static/default files
+
             //app.UseDefaultFiles();
 
             ////items from wwwroot
             //app.UseStaticFiles();
 
             //this install defaultfiles and staticfiles together
-            app.UseFileServer();
-           
+            //app.UseFileServer(); //this should be uncomment if we get back
+
+            #endregion
+
+
+            ////app.Run( async ( context ) =>
+            //// {
+            ////     //throw new Exception( "error!" );
+            ////     //var greeting = configuration[ "Greeting" ];
+            ////     var greeting = greeter.GetMessageOfTheDay();
+            ////     await context.Response.WriteAsync( $" {greeting} : {env.EnvironmentName}" );
+            //// } );
+            ///
+            #endregion
+
+            //to manually add MVC
+
+            if ( env.IsDevelopment() )
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseStaticFiles();
+
+            //app.UseMvcWithDefaultRoute();
+
+            app.UseMvc(ConfigureRoutes);
 
             app.Run( async ( context ) =>
-             {
-                 //throw new Exception( "error!" );
-                 //var greeting = configuration[ "Greeting" ];
-                 var greeting = greeter.GetMessageOfTheDay();
-                 await context.Response.WriteAsync( $" {greeting} : {env.EnvironmentName}" );
-             } );
+            {
+             // context.Response.ContentType = "text/plain";
+                await context.Response.WriteAsync( $"Not found" );
+            } );
+        }
+
+        private void ConfigureRoutes( IRouteBuilder routeBuilder )
+        {
+
+            // /Home/Index/4   
+            //{controller=Home}/{action=Index} here we say: if we dont add in the url Home and Index, then use them as default
+            routeBuilder.MapRoute( "Default" , 
+                "{controller=Home}/{action=Index}/{id?}");
         }
     }
 

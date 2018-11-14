@@ -17,7 +17,6 @@ D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\bin\Debug\netcoreapp2.1\Od
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.runtimeconfig.dev.json
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.dll
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.pdb
-D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csprojAssemblyReference.cache
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csproj.CoreCompileInputs.cache
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.RazorAssemblyInfo.cache
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.RazorAssemblyInfo.cs
