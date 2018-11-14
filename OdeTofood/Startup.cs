@@ -24,7 +24,7 @@ namespace OdeTofood
       //The code will response to whatever we configure here in the "Configure" method
       public void Configure( IApplicationBuilder app, 
                              IHostingEnvironment env,
-                             //IConfiguration configuration
+                             //IConfiguration configuration,
                              IGreeter greeter
                              )
       {
