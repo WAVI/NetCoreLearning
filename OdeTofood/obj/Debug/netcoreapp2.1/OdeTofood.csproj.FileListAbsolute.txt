@@ -1,0 +1,14 @@
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.deps.json
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.runtimeconfig.json
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.runtimeconfig.dev.json
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.dll
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.pdb
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csproj.CoreCompileInputs.cache
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.RazorAssemblyInfo.cache
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.RazorAssemblyInfo.cs
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.AssemblyInfoInputs.cache
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.AssemblyInfo.cs
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.RazorTargetAssemblyInfo.cache
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.dll
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.pdb
+C:\Users\IHI\Documents\Visual Studio 2017\Projects\OdeTofood\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csprojAssemblyReference.cache
