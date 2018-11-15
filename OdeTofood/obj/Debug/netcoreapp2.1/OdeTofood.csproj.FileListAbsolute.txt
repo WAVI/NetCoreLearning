@@ -25,7 +25,6 @@ D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Od
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.RazorTargetAssemblyInfo.cache
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.dll
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.pdb
-D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csprojAssemblyReference.cache
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.Views.dll
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\bin\Debug\netcoreapp2.1\OdeTofood.Views.pdb
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.TagHelpers.input.cache
@@ -36,3 +35,5 @@ D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Od
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.Views.pdb
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csproj.CopyComplete
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.g.cshtml.cs
+D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
+D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs

@@ -29,8 +29,8 @@ namespace OdeTofood.Controllers
         */
         #endregion
 
-        public HomeController(IRestaurantData restaurantData,
-                              IGreeter greeter)
+        public HomeController( IRestaurantData restaurantData ,
+                              IGreeter greeter )
         {
             _restaurantData = restaurantData;
             _greeter = greeter;
@@ -43,23 +43,44 @@ namespace OdeTofood.Controllers
                 Restaurants = _restaurantData.GetAll() ,
                 CurrentMessage = _greeter.GetMessageOfTheDay()
             };
-            
+
             //by default its looking after Views folder compared to the controller/model where the name doesn't matter
             //if this is being returned in the Index() method, then its gonna look for Index.cshtml
-            return View(model);
+            return View( model );
         }
 
-        public IActionResult Details(int id)
+        public IActionResult Details( int id )
         {
             var model = _restaurantData.Get( id );
-            if(model is null)
+            if ( model is null )
             {
                 ////return a http response with 404. its good with API
                 //return NotFound();
 
-                return RedirectToAction( nameof(Index) );
+                return RedirectToAction( nameof( Index ) );
             }
             return View( model );
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Create( RestaurantEditModel model ) 
+        {
+            var newRestaurant = new Restaurant
+            {
+                Name = model.Name ,
+                Cuisine = model.Cuisine
+            };
+
+            newRestaurant = _restaurantData.Add( newRestaurant );
+
+            return View( "Details", newRestaurant );
         }
     }
 }
