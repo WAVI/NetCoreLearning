@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OdeTofood.Models;
 using OdeTofood.Services;
+using OdeTofood.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace OdeTofood.Controllers
     public class HomeController : Controller
     {
         private IRestaurantData _restaurantData;
+        private IGreeter _greeter;
         #region GOOD WHEN WE BUILD API
         /*
         public IActionResult Index()
@@ -27,18 +29,22 @@ namespace OdeTofood.Controllers
         */
         #endregion
 
-
-        public HomeController(IRestaurantData restaurantData)
+        public HomeController(IRestaurantData restaurantData,
+                              IGreeter greeter)
         {
             _restaurantData = restaurantData;
+            _greeter = greeter;
         }
-
-       
 
         public IActionResult Index()
         {
-            var model = _restaurantData.GetAll();
+            var model = new HomeIndexViewModel
+            {
+                Restaurants = _restaurantData.GetAll() ,
+                CurrentMessage = _greeter.GetMessageOfTheDay()
+            };
             
+            //by default its looking after Views folder compared to the controller/model where the name doesn't matter
             return View(model);
         }
     }
