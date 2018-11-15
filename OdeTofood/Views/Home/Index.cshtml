@@ -1,0 +1,25 @@
+﻿@model IEnumerable<OdeTofood.Models.Restaurant>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+    @*model is the object we passed from the controller in the View*@
+    @*<h1></h1>
+      <div>The ID value is @Model.Id</div>*@
+
+    <table>
+        @foreach ( var restaurant in Model )
+        {
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Id</td>
+        </tr>
+        }
+
+    </table>
+</body>
+</html>

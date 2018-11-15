@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using OdeTofood.Services;
 
 namespace OdeTofood
 {
@@ -18,9 +14,10 @@ namespace OdeTofood
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices( IServiceCollection services )
         {
-            //services.AddScoped<IGreeter, Greeter>();
+
             services.AddSingleton<IGreeter , Greeter>();
-            
+            services.AddScoped<IRestaurantData , InMemoryRestaurantData>();
+
 
             //for MVC
             services.AddMvc();
@@ -108,11 +105,11 @@ namespace OdeTofood
 
             //app.UseMvcWithDefaultRoute();
 
-            app.UseMvc(ConfigureRoutes);
+            app.UseMvc( ConfigureRoutes );
 
             app.Run( async ( context ) =>
             {
-             // context.Response.ContentType = "text/plain";
+                // context.Response.ContentType = "text/plain";
                 await context.Response.WriteAsync( $"Not found" );
             } );
         }
@@ -122,8 +119,8 @@ namespace OdeTofood
 
             // /Home/Index/4   
             //{controller=Home}/{action=Index} here we say: if we dont add in the url Home and Index, then use them as default
-            routeBuilder.MapRoute( "Default" , 
-                "{controller=Home}/{action=Index}/{id?}");
+            routeBuilder.MapRoute( "Default" ,
+                "{controller=Home}/{action=Index}/{id?}" );
         }
     }
 
