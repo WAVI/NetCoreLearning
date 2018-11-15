@@ -19,6 +19,15 @@
         <tr>
             <td>@restaurant.Name</td>
             <td>@restaurant.Id</td>
+            <td>
+                
+                @*<a href="/home/details/@restaurant.Id">Details</a>*@
+                
+                @*@Html.ActionLink("Go", "Details", new { id=restaurant.Id } ) ---- old asp.net*@
+
+                @*for this, we need Views/_ViewImports.cshtml si prima linie*@
+                <a asp-action="Details" asp-route-id="@restaurant.Id">More</a>
+            </td>
         </tr>
         }
 
