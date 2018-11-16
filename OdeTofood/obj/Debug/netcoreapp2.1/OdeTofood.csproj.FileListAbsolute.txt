@@ -37,4 +37,3 @@ D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Od
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.g.cshtml.cs
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
 D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
-D:\net-c#\DotNetPluralsight\NetCoreLearning\OdeTofood\obj\Debug\netcoreapp2.1\OdeTofood.csprojAssemblyReference.cache
