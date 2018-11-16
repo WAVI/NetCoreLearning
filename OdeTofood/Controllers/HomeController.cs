@@ -70,17 +70,27 @@ namespace OdeTofood.Controllers
 
 
         [HttpPost]
-        public IActionResult Create( RestaurantEditModel model ) 
+        [ValidateAntiForgeryToken]
+        public IActionResult Create( RestaurantEditModel model )
         {
-            var newRestaurant = new Restaurant
+            //ModelState.IsValid we check if is properly populated based on the data notation
+            if ( ModelState.IsValid )
             {
-                Name = model.Name ,
-                Cuisine = model.Cuisine
-            };
+                var newRestaurant = new Restaurant
+                {
+                    Name = model.Name ,
+                    Cuisine = model.Cuisine
+                };
 
-            newRestaurant = _restaurantData.Add( newRestaurant );
+                newRestaurant = _restaurantData.Add( newRestaurant );
 
-            return View( "Details", newRestaurant );
+                return RedirectToAction( nameof( Details ) , new { id = newRestaurant.Id } );
+            }
+            else
+            {
+                return View();
+            }
+
         }
     }
 }
