@@ -1,4 +1,4 @@
-﻿@model OdeTofood.Models.Restaurant
+﻿@model Restaurant
 @*avoid using if here*@
 @*@if ( Model == null )
     {
@@ -12,6 +12,9 @@
         <div> ... details ...</div>
     }*@
 
+@{ 
+    ViewBag.Title = Model.Name;
+}
 
 <h1>@Model.Name</h1>
 <div>
