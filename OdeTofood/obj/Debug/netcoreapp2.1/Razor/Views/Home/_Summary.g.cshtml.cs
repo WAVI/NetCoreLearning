@@ -75,7 +75,7 @@ using OdeTofood.ViewModels;
             WriteLiteral("\r\n    </div>\r\n    <div>\r\n        ");
             EndContext();
             BeginContext(133, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c807aa0fe46b44288eabf70089216d7a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa3c1d1a5a5944878f1228614743d15f", async() => {
                 BeginContext(182, 4, true);
                 WriteLiteral("More");
                 EndContext();
@@ -110,7 +110,7 @@ using OdeTofood.ViewModels;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(200, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ca044e996b4404d89aacfb06f309463", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d8ed4ac1874473291ae4af092102a90", async() => {
                 BeginContext(257, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
