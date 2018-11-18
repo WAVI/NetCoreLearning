@@ -1,0 +1,10 @@
+﻿@page "{name}" 
+
+@*@inject IGreeter Greeter;
+<div>@Greeter.GetMessageOfTheDay()</div>*@
+
+
+@*it's the cs file for this class*@
+@model GreetingModel
+
+<div> @Model.CurrentGreeter </div>
